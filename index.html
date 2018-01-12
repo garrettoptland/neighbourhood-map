@@ -25,8 +25,8 @@
 			</div>
 			<div class="listings section">
 				<h3>Locations</h3>
-				<ul>
-					<li></li>
+				<ul data-bind="foreach: listings">
+					<li data-bind="text: $data"></li>
 				</ul>
 			</div>
 			<div class="filter section">
