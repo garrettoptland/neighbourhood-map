@@ -1,0 +1,124 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+	height: 100%;
+}
+
+h1 {
+	font-size: 20px;
+	color: #fff;
+	margin: 0 0 5px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 14px;
+	line-height: 1em;
+	margin: 5px 0;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+li {
+	font-size: 15px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+
+	text-align: left;
+	background: #333;
+	color: #fff;
+	height: 100px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.container {
+	height: 100%;
+	position: relative;
+	background: #f7f7f7;
+}
+
+#map {
+	top: 100px;
+	bottom: 0px;
+	height: calc(100% - 100px);
+	left: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+.options-box {
+	line-height: 35px;
+	padding: 10px 10px 30px 10px;
+	text-align: left;
+	width: 100%;
+	min-width: 250px;
+	max-width: 340px;
+	position: absolute;
+	top: 100px;
+	box-sizing: border-box;
+	height: calc(100% - 100px);
+	z-index: 50;
+	background: #f7f7f7;
+
+	transform: translate3d(0, 0, 0);
+	transition: transform 0.2s;
+}
+
+.options-box .section {
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.infowindow-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.menu-icon-link {
+	color: #fff;
+	font-size: 24px;
+}
+
+header .headings {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+header .menu {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 80px;
+}
+
+.menu-hidden .options-box {
+	transform: translate3d(-340px, 0, 0);
+	transition: transform 0.2s;
+}
+
+footer p {
+	font-size: 12px;
+	line-height: 14px;
+	font-style: italic;
+}
+
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+}
